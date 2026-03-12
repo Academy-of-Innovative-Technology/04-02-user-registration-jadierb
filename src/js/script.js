@@ -1,5 +1,11 @@
 document.querySelector(".btn-primary").addEventListener("click", function (event) {
 
-    const firstName = document.querySelector("");
+    
+
+    const form = document.getElementById("registrationForm");
+    const noSavedUserDiv = document.getElementById("noSavedUser");
+    const savedUserPanel = document.getElementById("savedUserPanel");
+    const loadUserBtn = document.getElementById("loadUserBtn");
+    const clearUserBtn = document.getElementById("clearUserBtn");
 
 });
