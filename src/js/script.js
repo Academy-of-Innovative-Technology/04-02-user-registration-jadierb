@@ -67,5 +67,10 @@ function displayUser(userOb) {
         savedUserpanel.classList.add("d-none");
         return;
     }
+
 }
+
+noSavedUserDiv.class.add("d-none");
+savedUserpanel.classList.remove("d-none");
+
 ]});
