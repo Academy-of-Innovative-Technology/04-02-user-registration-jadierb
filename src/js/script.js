@@ -37,5 +37,8 @@ document.querySelector(".btn-primary").addEventListener("click", function (event
         const jsonUser = JSON.stringify(user);
         localStorage.setItem("registeredUser", jsonUser);
     }
+displayUser(user);
+}
+
 
 });
