@@ -34,7 +34,8 @@ document.querySelector(".btn-primary").addEventListener("click", function (event
             accountType: selectAcountType ? selectAcountType.value : null,
             about: aboutTextarea.value
         };
-        
+        const jsonUser = JSON.stringify(user);
+        localStorage.setItem("registeredUser", jsonUser);
     }
 
 });
