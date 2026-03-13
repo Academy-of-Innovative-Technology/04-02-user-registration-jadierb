@@ -40,5 +40,13 @@ document.querySelector(".btn-primary").addEventListener("click", function (event
 displayUser(user);
 }
 
+function loadUser() {
+    const savedString = localStorage.getItem("registeredUser");
+
+    if (!savedString) {
+        console.log("No saved user found");
+        return null;
+    }
+const savedUser = JSON.parse(savedString);
 
 });
