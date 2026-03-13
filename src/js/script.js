@@ -61,5 +61,11 @@ if (radioButton) {
     radioButton.checked = true;
     return savedUser
 }
-
+function displayUser(userOb) {
+    if (!userObj) {
+        noSavedUserDiv.classList.remove("d-none");
+        savedUserpanel.classList.add("d-none");
+        return;
+    }
+}
 ]});
