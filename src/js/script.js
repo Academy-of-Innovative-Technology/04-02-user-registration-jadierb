@@ -22,4 +22,19 @@ document.querySelector(".btn-primary").addEventListener("click", function (event
     const savedAccountTypeSpan = document.getElementById("savedAboutType");
     const savedAboutSpan = document.getElementById("savedAbout");
 
+    function SaveUserData() {
+        const selectAcountType = document.querySelector('input[name="accountType"]:checked');
+
+        const user = {
+            firstName: firstNameInput.value,
+            lastName: lastNameInput.value,
+            email: emailInput.value,
+            password: passwordInput.value,
+            country: countrySelect.value,
+            accountType: selectAcountType ? selectAcountType.value : null,
+            about: aboutTextarea.value
+        };
+        
+    }
+
 });
