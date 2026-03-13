@@ -49,4 +49,17 @@ function loadUser() {
     }
 const savedUser = JSON.parse(savedString);
 
-});
+firstNameInput.value = savedUser.firstName || "";
+lastNameInput.value = savedUser.lastName || "";
+emailInput.value = savedUser.email || "";
+passwordInput.value = savedUser.password || "";
+conuntrySelect.value = savedUser.country || "";
+aboutTextarea.value = savedUser.about || "";
+
+const radioButton = document.querySelector(`input[name="accountType]{value="${savedUser.accountType}`)
+if (radioButton) {
+    radioButton.checked = true;
+    return savedUser
+}
+
+]});
