@@ -81,5 +81,11 @@ savedAccountTypeSpan.textContent = userObj.accountType || "_";
 savedAboutSpan.textContent = userObj.avout || "_";
 }
 
+function clearUser() {
 
+ localStorage.removeItem("registeredUser");
+ noSavedUserDiv.classList.remove("d-none");
+ savedUserPanel.classList.add("d-none");
+ console,log("User data cleared from localStorage");
+}
 ]});
