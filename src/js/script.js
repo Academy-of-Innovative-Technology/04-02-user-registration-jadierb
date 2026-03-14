@@ -73,4 +73,13 @@ function displayUser(userOb) {
 noSavedUserDiv.class.add("d-none");
 savedUserpanel.classList.remove("d-none");
 
+savedFirstNameSpan.textContent = userObj.firstName || "_";
+savedLastNameSpan.textContent = userObj.lastName || "_";
+savedEmailSpan.textContent = userObj.email || "_";
+savedCountrySpan.textContent = userObj.country || "_";
+savedAccountTypeSpan.textContent = userObj.accountType || "_";
+savedAboutSpan.textContent = userObj.avout || "_";
+}
+
+
 ]});
